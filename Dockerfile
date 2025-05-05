@@ -16,10 +16,8 @@ RUN pip install --no-cache-dir --upgrade pip \
 
 # Set default environment variables (can be overridden)
 ENV SNOWFLAKE_USER=your_username \
-    SNOWFLAKE_PASSWORD=your_password \
     SNOWFLAKE_ACCOUNT=your_account \
-    SNOWFLAKE_DATABASE=your_database \
-    SNOWFLAKE_WAREHOUSE=your_warehouse
+    SNOWFLAKE_DATABASE=your_database
 
 # Command to run the MCP server
 CMD ["python", "server.py"]
